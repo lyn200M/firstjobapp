@@ -9,13 +9,13 @@ import java.util.Date;
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String text;
-    Date createdDate;
-    Date lastModification;
-    String author;
+    private Long id;
+    private String text;
+    private Date createdDate;
+    private Date lastModification;
+    private String author;
     @ManyToOne
-    Company company;
+    private Company company;
 
     public Review() {
     }
